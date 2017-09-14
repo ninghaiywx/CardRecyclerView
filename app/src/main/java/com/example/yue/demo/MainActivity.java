@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onLeftRemove() {
                 Toast.makeText(MainActivity.this,"左侧删除"+list.get(list.size()-1),Toast.LENGTH_LONG).show();
-                Log.d("remove",list.get(list.size()-1));
                 list.remove(list.size()-1);
                 adapter.notifyDataSetChanged();
                 Log.d("size",list.size()+"");
@@ -44,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onRightRemove() {
                 Toast.makeText(MainActivity.this,"右侧删除"+list.get(list.size()-1),Toast.LENGTH_LONG).show();
-                Log.d("remove",list.get(list.size()-1));
                 list.remove(list.size()-1);
                 adapter.notifyDataSetChanged();
                 Log.d("size",list.size()+"");
@@ -53,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init() {
-        for(int i=0;i<8;i++){
+        for(int i=0;i<20;i++){
             list.add(i+"");
         }
         adapter.notifyDataSetChanged();
