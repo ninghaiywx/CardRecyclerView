@@ -4,10 +4,10 @@
 ![](card_recyclerview.gif)
 
 ### Gradle引入
-<pre>compile 'me.ywx.CardRecyclerView:cardrecyclerview:1.0.0'</pre>
+<pre>compile 'me.ywx.CardRecyclerView:cardrecyclerview:1.0.1'</pre>
 
 #### 注意
-<pre>该项目引入的recyclerview版本为26.+,所以引入的项目中appcompat版本要为26.+的</pre>
+<pre>该项目引入的recyclerview版本为24.+</pre>
 
 ### xml引入
 ```xml
